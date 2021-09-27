@@ -1,0 +1,15 @@
+package com.example.feedingcalc.gui;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.example.feedingcalc.R;
+
+public class ActividadDeLogin extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_actividad_de_login);
+    }
+}

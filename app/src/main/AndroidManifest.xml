@@ -9,10 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FeedingCalc">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".gui.ActividadMenu"
+            android:exported="true"
+            android:label="@string/title_activity_actividad_menu"
+            android:theme="@style/Theme.FeedingCalc.NoActionBar" />
+
+        <activity
+            android:name=".gui.ActividadDeRegistro"
+            android:label="@string/inicio" />
+
+        <activity
+            android:name=".gui.ActividadDeLogin"
+            android:label="@string/inicio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
