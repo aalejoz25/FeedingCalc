@@ -37,6 +37,15 @@ public class ListaGanancias {
         return -1;
     }
 
+    public int obtenerGananciasTotales() {
+        int gananciasTotales = 0;
+        for (Ganancia g : ganancias
+        ) {
+            gananciasTotales += g.getValor();
+        }
+        return gananciasTotales;
+    }
+
     public int getSize() {
         return ganancias.size();
     }

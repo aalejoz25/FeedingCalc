@@ -21,9 +21,6 @@ public class ActividadDeRegistro extends AppCompatActivity {
     private EditText contraseña;
     private EditText repeticionContraseña;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
