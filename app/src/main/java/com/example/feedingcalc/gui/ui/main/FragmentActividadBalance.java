@@ -6,9 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.example.feedingcalc.databinding.FragmentActividadBalanceBinding;
+import com.example.feedingcalc.R;
 
 /**
  * A placeholder fragment containing a simple view.
@@ -17,7 +16,7 @@ public class FragmentActividadBalance extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
 
-    private FragmentActividadBalanceBinding menu;
+
 
 
 
@@ -39,16 +38,8 @@ public class FragmentActividadBalance extends Fragment {
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 
-        menu = FragmentActividadBalanceBinding.inflate(inflater, container, false);
-        View root = menu.getRoot();
-
-        final TextView textView = menu.sectionLabel;
-        return root;
+        return inflater.inflate(R.layout.fragment_actividad_balance, container, false);
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        menu = null;
-    }
+
 }

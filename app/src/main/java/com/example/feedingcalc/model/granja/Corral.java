@@ -7,6 +7,7 @@ public class Corral {
     private String id;
     private ArrayList<Animal> animales;
     private int cantidadAnimales;
+    private boolean isEmpty = true;
 
     public Corral(int cantidadAnimales) {
         animales = new ArrayList<>();
@@ -16,6 +17,7 @@ public class Corral {
         } else {
             updateId(id);
         }
+
     }
 
     public ArrayList<Animal> getAnimales() {
@@ -23,8 +25,9 @@ public class Corral {
     }
 
     public void añadirAnimal(Animal animal) {
-        if (animales.size() < this.cantidadAnimales) {
+        if (getSize() < this.cantidadAnimales) {
             animales.add(animal);
+            this.isEmpty = false;
         } else {
             System.out.println("No se puede añadir mas animales al corral");
         }
@@ -32,6 +35,9 @@ public class Corral {
 
     public void borrarAnimal(Animal animal) {
         animales.remove(animal);
+        if (getSize()==0){
+            this.isEmpty = true;
+        }
     }
 
     public Animal getAnimal(int index) {
@@ -65,5 +71,7 @@ public class Corral {
         this.id = id;
     }
 
-
+    public boolean isEmpty() {
+        return isEmpty;
+    }
 }

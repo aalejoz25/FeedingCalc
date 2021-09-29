@@ -19,7 +19,13 @@ public class ListaDeCorrales {
     }
 
     public void borrarCorral(Corral corral) {
-        corrales.remove(corral);
+        if (corral.isEmpty() == true) {
+            corrales.remove(corral);
+        }else{
+            System.out.println("No se puede borrar, el corral no esta vacio");
+        }
+
+
     }
 
     public Corral getCorral(int index) {

@@ -1,6 +1,9 @@
 package com.example.feedingcalc.model.calculador;
 
+import java.util.UUID;
+
 public class Ganancia {
+    private String id;
     private int valor;
     private String cliente;
     private String descripcion;
@@ -9,6 +12,7 @@ public class Ganancia {
         this.valor = valor;
         this.cliente = cliente;
         this.descripcion = descripcion;
+        setId();
     }
 
     public int getValor() {
@@ -33,5 +37,13 @@ public class Ganancia {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public void setId() {
+        this.id = UUID.randomUUID().toString();
+    }
+
+    public String getId() {
+        return id;
     }
 }

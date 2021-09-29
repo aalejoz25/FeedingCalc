@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Repositorios/FeedingCalc/app/src/main/res/layout/activity_actividad_crear_animal.xml" value="0.10855263157894737" />
+        <entry key="..\:/Repositorios/FeedingCalc/app/src/main/res/layout/activity_actividad_de_login.xml" value="0.152" />
+        <entry key="..\:/Repositorios/FeedingCalc/app/src/main/res/layout/activity_actividad_de_registro.xml" value="0.2" />
         <entry key="..\:/Repositorios/FeedingCalc/app/src/main/res/layout/activity_actividad_menu.xml" value="0.1" />
         <entry key="..\:/Repositorios/FeedingCalc/app/src/main/res/layout/activity_sfdasdad.xml" value="0.10888157894736843" />
         <entry key="..\:/Repositorios/FeedingCalc/app/src/main/res/layout/fragment_actividad_balance.xml" value="0.11644736842105263" />
